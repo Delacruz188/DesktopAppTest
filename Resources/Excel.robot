@@ -1,6 +1,6 @@
 *** Settings ***
 Library  WhiteLibrary
-Resource    ./Common.robot
+#Resource    ./Common.robot
 
 *** Variables ***
 
