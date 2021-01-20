@@ -14,6 +14,5 @@ open app
     Word.open word
     Word.paste the graphic
     Word.save
-    SendEmail.enviar correo
 
 
