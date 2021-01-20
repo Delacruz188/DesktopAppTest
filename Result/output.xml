@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.6.3 on win32)" generated="20210120 15:46:36.412" rpa="false">
+<suite id="s1" name="Excel" source="C:\development\excel\Resources\Excel.robot">
+<test id="s1-t1" name="open excel">
+<kw name="Launch Application" library="WhiteLibrary">
+<doc>Launches an application.</doc>
+<arguments>
+<arg>C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE</arg>
+</arguments>
+<status status="PASS" starttime="20210120 15:46:36.873" endtime="20210120 15:46:36.997"></status>
+</kw>
+<kw name="Attach Window" library="WhiteLibrary">
+<doc>Attaches WhiteLibrary to a window.</doc>
+<arguments>
+<arg>Excel</arg>
+</arguments>
+<status status="PASS" starttime="20210120 15:46:37.000" endtime="20210120 15:46:38.786"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:Libro en blanco</arg>
+</arguments>
+<status status="PASS" starttime="20210120 15:46:38.787" endtime="20210120 15:46:39.727"></status>
+</kw>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" starttime="20210120 15:46:36.873" endtime="20210120 15:46:39.728" critical="yes"></status>
+</test>
+<test id="s1-t2" name="write the headers">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210120 15:46:42.745" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210120 15:46:39.731" endtime="20210120 15:46:42.745"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:"A" 3</arg>
+</arguments>
+<status status="PASS" starttime="20210120 15:46:42.746" endtime="20210120 15:46:43.228"></status>
+</kw>
+<kw name="Press Keys" library="WhiteLibrary">
+<doc>Press a key or keys.</doc>
+<arguments>
+<arg>Ganancias</arg>
+</arguments>
+<status status="PASS" starttime="20210120 15:46:43.229" endtime="20210120 15:46:43.258"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:"B" 3</arg>
+</arguments>
+<status status="PASS" starttime="20210120 15:46:43.261" endtime="20210120 15:46:43.672"></status>
+</kw>
+<status status="PASS" starttime="20210120 15:46:39.730" endtime="20210120 15:46:43.673" critical="yes"></status>
+</test>
+<test id="s1-t3" name="put each total in a table">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210120 15:46:46.688" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210120 15:46:43.675" endtime="20210120 15:46:46.688"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:"A" 4</arg>
+</arguments>
+<status status="PASS" starttime="20210120 15:46:46.689" endtime="20210120 15:46:47.044"></status>
+</kw>
+<kw name="Press Keys" library="WhiteLibrary">
+<doc>Press a key or keys.</doc>
+<arguments>
+<arg>${TOTAL_PRODUCTO_1}</arg>
+</arguments>
+<msg timestamp="20210120 15:46:47.046" level="FAIL">Variable '${TOTAL_PRODUCTO_1}' not found.</msg>
+<msg timestamp="20210120 15:46:47.049" level="INFO">whitelib_screenshot_12.png</msg>
+<msg timestamp="20210120 15:46:47.049" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="whitelib_screenshot_12.png"&gt;&lt;img src="whitelib_screenshot_12.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="FAIL" starttime="20210120 15:46:47.045" endtime="20210120 15:46:47.047"></status>
+</kw>
+<status status="FAIL" starttime="20210120 15:46:43.674" endtime="20210120 15:46:47.140" critical="yes">Variable '${TOTAL_PRODUCTO_1}' not found.</status>
+</test>
+<test id="s1-t4" name="put each tiposervicio's name in a table">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210120 15:46:50.147" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210120 15:46:47.142" endtime="20210120 15:46:50.147"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:"B" 4</arg>
+</arguments>
+<status status="PASS" starttime="20210120 15:46:50.148" endtime="20210120 15:46:50.502"></status>
+</kw>
+<kw name="Press Keys" library="WhiteLibrary">
+<doc>Press a key or keys.</doc>
+<arguments>
+<arg>Servicio 1</arg>
+</arguments>
+<status status="PASS" starttime="20210120 15:46:50.503" endtime="20210120 15:46:50.645"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:"B" 5</arg>
+</arguments>
+<status status="PASS" starttime="20210120 15:46:50.646" endtime="20210120 15:46:51.184"></status>
+</kw>
+<kw name="Press Keys" library="WhiteLibrary">
+<doc>Press a key or keys.</doc>
+<arguments>
+<arg>Servicio 2</arg>
+</arguments>
+<status status="PASS" starttime="20210120 15:46:51.185" endtime="20210120 15:46:51.323"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:"B" 6</arg>
+</arguments>
+<status status="PASS" starttime="20210120 15:46:51.324" endtime="20210120 15:46:51.778"></status>
+</kw>
+<kw name="Press Keys" library="WhiteLibrary">
+<doc>Press a key or keys.</doc>
+<arguments>
+<arg>Servicio 3</arg>
+</arguments>
+<status status="PASS" starttime="20210120 15:46:51.779" endtime="20210120 15:46:51.812"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:"B" 7</arg>
+</arguments>
+<status status="PASS" starttime="20210120 15:46:51.813" endtime="20210120 15:46:52.239"></status>
+</kw>
+<kw name="Press Keys" library="WhiteLibrary">
+<doc>Press a key or keys.</doc>
+<arguments>
+<arg>Servicio 4</arg>
+</arguments>
+<status status="PASS" starttime="20210120 15:46:52.239" endtime="20210120 15:46:52.397"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:"B" 8</arg>
+</arguments>
+<status status="PASS" starttime="20210120 15:46:52.398" endtime="20210120 15:46:52.916"></status>
+</kw>
+<kw name="Press Keys" library="WhiteLibrary">
+<doc>Press a key or keys.</doc>
+<arguments>
+<arg>Servicio 5</arg>
+</arguments>
+<status status="PASS" starttime="20210120 15:46:52.917" endtime="20210120 15:46:52.939"></status>
+</kw>
+<status status="PASS" starttime="20210120 15:46:47.142" endtime="20210120 15:46:52.942" critical="yes"></status>
+</test>
+<test id="s1-t5" name="graphic">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210120 15:46:55.954" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210120 15:46:52.946" endtime="20210120 15:46:55.954"></status>
+</kw>
+<kw name="Drag And Drop" library="WhiteLibrary">
+<doc>Drags item with locator ``locator1`` to item with locator ``locator2``.</doc>
+<arguments>
+<arg>text:"A" 4</arg>
+<arg>text:"A" 8</arg>
+</arguments>
+<msg timestamp="20210120 15:47:01.065" level="FAIL">AutomationException: Failed to get Name="A" 4
+   en TestStack.White.UIItems.UIItemContainer.Get(SearchCriteria searchCriteria, TimeSpan timeout)</msg>
+<msg timestamp="20210120 15:47:01.066" level="INFO">whitelib_screenshot_13.png</msg>
+<msg timestamp="20210120 15:47:01.067" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="whitelib_screenshot_13.png"&gt;&lt;img src="whitelib_screenshot_13.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="FAIL" starttime="20210120 15:46:55.955" endtime="20210120 15:47:01.065"></status>
+</kw>
+<status status="FAIL" starttime="20210120 15:46:52.945" endtime="20210120 15:47:01.169" critical="yes">AutomationException: Failed to get Name="A" 4
+   en TestStack.White.UIItems.UIItemContainer.Get(SearchCriteria searchCriteria, TimeSpan timeout)</status>
+</test>
+<test id="s1-t6" name="copy the graphic">
+<kw name="Mouse Right Click" library="WhiteLibrary">
+<doc>Right clicks mouse at given position.</doc>
+<arguments>
+<arg>750</arg>
+<arg>750</arg>
+</arguments>
+<msg timestamp="20210120 15:47:01.175" level="FAIL">ElementNotAvailableException: El elemento de destino corresponde a un elemento de interfaz de usuario que ya no está disponible (por ejemplo, la ventana primaria se cerró).
+   en MS.Internal.AutomationProxies.Misc.ThrowWin32ExceptionsIfError(Int32 errorCode)
+   en MS.Internal.AutomationProxies.Misc.GetWindowRect(IntPtr hwnd, Win32Rect&amp; rc)
+   en MS.Internal.AutomationProxies.ProxySimple.get_BoundingRectangle()
+   en MS.Internal.Automation.UiaCoreApi.CheckError(Int32 hr)
+   en System.Windows.Automation.AutomationElement.GetCurrentPropertyValue(AutomationProperty property, Boolean ignoreDefaultValue)
+   en System.Windows.Automation.AutomationElement.AutomationElementInformation.get_BoundingRectangle()
+   en TestStack.White.UIItems.UIItem.get_Bounds()</msg>
+<msg timestamp="20210120 15:47:01.177" level="INFO">whitelib_screenshot_14.png</msg>
+<msg timestamp="20210120 15:47:01.177" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="whitelib_screenshot_14.png"&gt;&lt;img src="whitelib_screenshot_14.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="FAIL" starttime="20210120 15:47:01.171" endtime="20210120 15:47:01.175"></status>
+</kw>
+<status status="FAIL" starttime="20210120 15:47:01.171" endtime="20210120 15:47:01.249" critical="yes">ElementNotAvailableException: El elemento de destino corresponde a un elemento de interfaz de usuario que ya no está disponible (por ejemplo, la ventana primaria se cerró).
+   en MS.Internal.AutomationProxies.Misc.ThrowWin32ExceptionsIfError(Int32 errorCode)
+   en MS.Internal.AutomationProxies.Misc.GetWindowRect(IntPtr hwnd, Win32Rect&amp; rc)
+   en MS.Internal.AutomationProxies.ProxySimple.get_BoundingRectangle()
+   en MS.Internal.Automation.UiaCoreApi.CheckError(Int32 hr)
+   en System.Windows.Automation.AutomationElement.GetCurrentPropertyValue(AutomationProperty property, Boolean ignoreDefaultValue)
+   en System.Windows.Automation.AutomationElement.AutomationElementInformation.get_BoundingRectangle()
+   en TestStack.White.UIItems.UIItem.get_Bounds()</status>
+</test>
+<test id="s1-t7" name="save the file">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210120 15:47:04.267" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210120 15:47:01.252" endtime="20210120 15:47:04.267"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:Cerrar</arg>
+</arguments>
+<msg timestamp="20210120 15:47:09.416" level="FAIL">AutomationException: Failed to get Name=Cerrar
+   en TestStack.White.UIItems.UIItemContainer.Get(SearchCriteria searchCriteria, TimeSpan timeout)</msg>
+<msg timestamp="20210120 15:47:09.419" level="INFO">whitelib_screenshot_15.png</msg>
+<msg timestamp="20210120 15:47:09.420" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="whitelib_screenshot_15.png"&gt;&lt;img src="whitelib_screenshot_15.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="FAIL" starttime="20210120 15:47:04.268" endtime="20210120 15:47:09.417"></status>
+</kw>
+<status status="FAIL" starttime="20210120 15:47:01.251" endtime="20210120 15:47:09.505" critical="yes">AutomationException: Failed to get Name=Cerrar
+   en TestStack.White.UIItems.UIItemContainer.Get(SearchCriteria searchCriteria, TimeSpan timeout)</status>
+</test>
+<status status="FAIL" starttime="20210120 15:46:36.416" endtime="20210120 15:47:09.508"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="4">Critical Tests</stat>
+<stat pass="3" fail="4">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="3" fail="4" id="s1" name="Excel">Excel</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20210120 15:46:36.865" level="ERROR">Error in file 'C:\development\excel\Resources\Excel.robot' on line 7: Setting variable '@{TOTAL_PRODUCTO_1}' failed: Variable '@{SUMA_TIPO_SERVICIO_1}' not found.</msg>
+<msg timestamp="20210120 15:46:36.866" level="ERROR">Error in file 'C:\development\excel\Resources\Excel.robot' on line 8: Setting variable '@{TOTAL_PRODUCTO_2}' failed: Variable '@{SUMA_TIPO_SERVICIO_2}' not found.</msg>
+<msg timestamp="20210120 15:46:36.868" level="ERROR">Error in file 'C:\development\excel\Resources\Excel.robot' on line 9: Setting variable '@{TOTAL_PRODUCTO_3}' failed: Variable '@{SUMA_TIPO_SERVICIO_3}' not found.</msg>
+<msg timestamp="20210120 15:46:36.869" level="ERROR">Error in file 'C:\development\excel\Resources\Excel.robot' on line 10: Setting variable '@{TOTAL_PRODUCTO_4}' failed: Variable '@{SUMA_TIPO_SERVICIO_4}' not found.</msg>
+<msg timestamp="20210120 15:46:36.871" level="ERROR">Error in file 'C:\development\excel\Resources\Excel.robot' on line 11: Setting variable '@{TOTAL_PRODUCTO_5}' failed: Variable '@{SUMA_TIPO_SERVICIO_5}' not found.</msg>
+</errors>
+</robot>

@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.6.3 on win32)" generated="20210119 20:18:12.729" rpa="false">
+<suite id="s1" name="Test" source="C:\development\excel\Tests\test.robot">
+<test id="s1-t1" name="open app">
+<kw name="open excel" library="Excel">
+<tags>
+<tag>Smoke</tag>
+</tags>
+<kw name="Launch Application" library="WhiteLibrary">
+<doc>Launches an application.</doc>
+<arguments>
+<arg>C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:14.005" endtime="20210119 20:18:14.177"></status>
+</kw>
+<kw name="Attach Window" library="WhiteLibrary">
+<doc>Attaches WhiteLibrary to a window.</doc>
+<arguments>
+<arg>Excel</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:14.178" endtime="20210119 20:18:16.632"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:Libro en blanco</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:16.632" endtime="20210119 20:18:17.959"></status>
+</kw>
+<status status="PASS" starttime="20210119 20:18:14.005" endtime="20210119 20:18:17.960"></status>
+</kw>
+<kw name="write the headers" library="Excel">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210119 20:18:20.963" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210119 20:18:17.962" endtime="20210119 20:18:20.963"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:"A" 3</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:20.964" endtime="20210119 20:18:21.609"></status>
+</kw>
+<kw name="Press Keys" library="WhiteLibrary">
+<doc>Press a key or keys.</doc>
+<arguments>
+<arg>Ganancias</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:21.609" endtime="20210119 20:18:21.764"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:"B" 3</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:21.765" endtime="20210119 20:18:22.424"></status>
+</kw>
+<status status="PASS" starttime="20210119 20:18:17.961" endtime="20210119 20:18:22.425"></status>
+</kw>
+<kw name="put each total in a table" library="Excel">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210119 20:18:25.442" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210119 20:18:22.427" endtime="20210119 20:18:25.442"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:"A" 4</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:25.443" endtime="20210119 20:18:26.007"></status>
+</kw>
+<kw name="Press Keys" library="WhiteLibrary">
+<doc>Press a key or keys.</doc>
+<arguments>
+<arg>@{TOTAL_PRODUCTO_1}</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:26.008" endtime="20210119 20:18:26.037"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:"A" 5</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:26.038" endtime="20210119 20:18:26.705"></status>
+</kw>
+<kw name="Press Keys" library="WhiteLibrary">
+<doc>Press a key or keys.</doc>
+<arguments>
+<arg>@{TOTAL_PRODUCTO_2}</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:26.706" endtime="20210119 20:18:26.748"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:"A" 6</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:26.748" endtime="20210119 20:18:27.420"></status>
+</kw>
+<kw name="Press Keys" library="WhiteLibrary">
+<doc>Press a key or keys.</doc>
+<arguments>
+<arg>@{TOTAL_PRODUCTO_3}</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:27.421" endtime="20210119 20:18:27.558"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:"A" 7</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:27.559" endtime="20210119 20:18:28.230"></status>
+</kw>
+<kw name="Press Keys" library="WhiteLibrary">
+<doc>Press a key or keys.</doc>
+<arguments>
+<arg>@{TOTAL_PRODUCTO_4}</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:28.231" endtime="20210119 20:18:28.267"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:"A" 8</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:28.268" endtime="20210119 20:18:29.049"></status>
+</kw>
+<kw name="Press Keys" library="WhiteLibrary">
+<doc>Press a key or keys.</doc>
+<arguments>
+<arg>@{TOTAL_PRODUCTO_5}</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:29.050" endtime="20210119 20:18:29.084"></status>
+</kw>
+<status status="PASS" starttime="20210119 20:18:22.426" endtime="20210119 20:18:29.085"></status>
+</kw>
+<kw name="graphic" library="Excel">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210119 20:18:32.102" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210119 20:18:29.089" endtime="20210119 20:18:32.102"></status>
+</kw>
+<kw name="Drag And Drop" library="WhiteLibrary">
+<doc>Drags item with locator ``locator1`` to item with locator ``locator2``.</doc>
+<arguments>
+<arg>text:"A" 4</arg>
+<arg>text:"A" 8</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:32.103" endtime="20210119 20:18:32.917"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:Insertar</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:32.917" endtime="20210119 20:18:33.320"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:Insertar gráfico circular o de anillos</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:33.321" endtime="20210119 20:18:33.857"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:Circular 3D</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:33.858" endtime="20210119 20:18:34.678"></status>
+</kw>
+<status status="PASS" starttime="20210119 20:18:29.089" endtime="20210119 20:18:34.679"></status>
+</kw>
+<kw name="copy the graphic" library="Excel">
+<kw name="Mouse Right Click" library="WhiteLibrary">
+<doc>Right clicks mouse at given position.</doc>
+<arguments>
+<arg>750</arg>
+<arg>750</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:34.683" endtime="20210119 20:18:34.698"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:Copiar</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:34.699" endtime="20210119 20:18:36.553"></status>
+</kw>
+<status status="PASS" starttime="20210119 20:18:34.681" endtime="20210119 20:18:36.554"></status>
+</kw>
+<kw name="open word" library="Word">
+<kw name="Launch Application" library="WhiteLibrary">
+<doc>Launches an application.</doc>
+<arguments>
+<arg>C:\\Program Files\\Microsoft Office\\root\\Office16\\WINWORD.EXE</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:36.556" endtime="20210119 20:18:36.594"></status>
+</kw>
+<kw name="Attach Window" library="WhiteLibrary">
+<doc>Attaches WhiteLibrary to a window.</doc>
+<arguments>
+<arg>Word</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:36.595" endtime="20210119 20:18:38.328"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:Documento en blanco</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:38.329" endtime="20210119 20:18:39.305"></status>
+</kw>
+<status status="PASS" starttime="20210119 20:18:36.555" endtime="20210119 20:18:39.306"></status>
+</kw>
+<kw name="paste the graphic" library="Word">
+<kw name="Mouse Right Click" library="WhiteLibrary">
+<doc>Right clicks mouse at given position.</doc>
+<arguments>
+<arg>750</arg>
+<arg>750</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:39.308" endtime="20210119 20:18:39.321"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:Imagen</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:39.321" endtime="20210119 20:18:40.736"></status>
+</kw>
+<status status="PASS" starttime="20210119 20:18:39.307" endtime="20210119 20:18:40.737"></status>
+</kw>
+<kw name="save" library="Word">
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:Pestaña Archivo</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:40.739" endtime="20210119 20:18:41.507"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:Exportar</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:41.508" endtime="20210119 20:18:41.710"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:Crear documento PDF/XPS</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:41.711" endtime="20210119 20:18:41.886"></status>
+</kw>
+<kw name="Click Button" library="WhiteLibrary">
+<doc>Clicks a button.</doc>
+<arguments>
+<arg>text:Crear documento PDF/XPS</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:41.886" endtime="20210119 20:18:42.237"></status>
+</kw>
+<kw name="Press Keys" library="WhiteLibrary">
+<doc>Press a key or keys.</doc>
+<arguments>
+<arg>${NOMBRE_ARCHIVO}</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:42.237" endtime="20210119 20:18:44.070"></status>
+</kw>
+<kw name="Click Button" library="WhiteLibrary">
+<doc>Clicks a button.</doc>
+<arguments>
+<arg>text:Publicar</arg>
+</arguments>
+<status status="PASS" starttime="20210119 20:18:44.071" endtime="20210119 20:18:47.003"></status>
+</kw>
+<status status="PASS" starttime="20210119 20:18:40.738" endtime="20210119 20:18:47.004"></status>
+</kw>
+<kw name="enviar correo" library="SendEmail">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://walook.com.mx:2096/cpsess6138734231/3rdparty/roundcube/?_task=mail&amp;_mbox=INBOX</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20210119 20:18:47.007" level="INFO">Opening browser 'chrome' to base url 'https://walook.com.mx:2096/cpsess6138734231/3rdparty/roundcube/?_task=mail&amp;_mbox=INBOX'.</msg>
+<status status="PASS" starttime="20210119 20:18:47.006" endtime="20210119 20:18:51.676"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="details-button"]</arg>
+</arguments>
+<msg timestamp="20210119 20:18:51.678" level="INFO">Clicking button 'xpath://*[@id="details-button"]'.</msg>
+<status status="PASS" starttime="20210119 20:18:51.677" endtime="20210119 20:18:51.875"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="proceed-link"]</arg>
+</arguments>
+<msg timestamp="20210119 20:18:51.877" level="INFO">Clicking element 'xpath://*[@id="proceed-link"]'.</msg>
+<status status="PASS" starttime="20210119 20:18:51.876" endtime="20210119 20:18:54.046"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="user"]</arg>
+<arg>${USUARIO}</arg>
+</arguments>
+<msg timestamp="20210119 20:18:54.048" level="INFO">Typing text 'cdelacruz@walook.com.mx' into text field 'xpath://*[@id="user"]'.</msg>
+<status status="PASS" starttime="20210119 20:18:54.047" endtime="20210119 20:18:54.240"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="pass"]</arg>
+<arg>${PASS}</arg>
+</arguments>
+<msg timestamp="20210119 20:18:54.241" level="INFO">Typing text 'Admin1234%' into text field 'xpath://*[@id="pass"]'.</msg>
+<status status="PASS" starttime="20210119 20:18:54.240" endtime="20210119 20:18:54.414"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="login_submit"]</arg>
+</arguments>
+<msg timestamp="20210119 20:18:54.415" level="INFO">Clicking button 'xpath://*[@id="login_submit"]'.</msg>
+<status status="PASS" starttime="20210119 20:18:54.415" endtime="20210119 20:18:54.532"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>5s</arg>
+</arguments>
+<msg timestamp="20210119 20:18:59.536" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20210119 20:18:54.533" endtime="20210119 20:18:59.536"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath://*[@id="rcmbtn111"]</arg>
+</arguments>
+<msg timestamp="20210119 20:18:59.538" level="INFO">Clicking element 'xpath://*[@id="rcmbtn111"]'.</msg>
+<status status="PASS" starttime="20210119 20:18:59.537" endtime="20210119 20:19:01.338"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210119 20:19:04.340" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210119 20:19:01.339" endtime="20210119 20:19:04.340"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:${TEXT_AREA_DESTINATARIO}</arg>
+<arg>${USUARIO}</arg>
+</arguments>
+<msg timestamp="20210119 20:19:04.341" level="INFO">Typing text 'cdelacruz@walook.com.mx' into text field 'xpath://*[@id="_to"]'.</msg>
+<status status="PASS" starttime="20210119 20:19:04.341" endtime="20210119 20:19:04.488"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:${BUTTON_ADJUNTAR_ARCHIVO}</arg>
+</arguments>
+<msg timestamp="20210119 20:19:04.489" level="INFO">Clicking element 'xpath://*[@id="compose-attachments"]/div/a'.</msg>
+<status status="PASS" starttime="20210119 20:19:04.488" endtime="20210119 20:19:04.596"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:Mostrar todos los archivos…</arg>
+</arguments>
+<msg timestamp="20210119 20:19:11.620" level="FAIL">AutomationException: Failed to get Name=Mostrar todos los archivos…
+   en TestStack.White.UIItems.UIItemContainer.Get(SearchCriteria searchCriteria, TimeSpan timeout)</msg>
+<msg timestamp="20210119 20:19:11.628" level="INFO">whitelib_screenshot_43.png</msg>
+<msg timestamp="20210119 20:19:11.629" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="whitelib_screenshot_43.png"&gt;&lt;img src="whitelib_screenshot_43.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="FAIL" starttime="20210119 20:19:04.596" endtime="20210119 20:19:11.620"></status>
+</kw>
+<msg timestamp="20210119 20:19:11.808" level="INFO">whitelib_screenshot_44.png</msg>
+<msg timestamp="20210119 20:19:11.809" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="whitelib_screenshot_44.png"&gt;&lt;img src="whitelib_screenshot_44.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="FAIL" starttime="20210119 20:18:47.005" endtime="20210119 20:19:11.802"></status>
+</kw>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="FAIL" starttime="20210119 20:18:14.002" endtime="20210119 20:19:11.919" critical="yes">AutomationException: Failed to get Name=Mostrar todos los archivos…
+   en TestStack.White.UIItems.UIItemContainer.Get(SearchCriteria searchCriteria, TimeSpan timeout)</status>
+</test>
+<status status="FAIL" starttime="20210119 20:18:12.733" endtime="20210119 20:19:11.925"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+<stat pass="0" fail="1">Smoke</stat>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

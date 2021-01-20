@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.6.3 on win32)" generated="20210115 14:06:43.971" rpa="false">
+<suite id="s1" name="Test" source="C:\development\excel\Tests\test.robot">
+<test id="s1-t1" name="open app">
+<kw name="open excel" library="Excel" type="setup">
+<tags>
+<tag>Smoke</tag>
+</tags>
+<kw name="Launch Application" library="WhiteLibrary">
+<doc>Launches an application.</doc>
+<arguments>
+<arg>C:\\Program Files\\Microsoft Office\\root\\Office16\\EXCEL.EXE</arg>
+</arguments>
+<status status="PASS" starttime="20210115 14:06:44.427" endtime="20210115 14:06:44.629"></status>
+</kw>
+<kw name="Attach Window" library="WhiteLibrary">
+<doc>Attaches WhiteLibrary to a window.</doc>
+<arguments>
+<arg>Excel</arg>
+</arguments>
+<status status="PASS" starttime="20210115 14:06:44.630" endtime="20210115 14:06:46.179"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:Libro en blanco</arg>
+</arguments>
+<status status="PASS" starttime="20210115 14:06:46.180" endtime="20210115 14:06:47.096"></status>
+</kw>
+<status status="PASS" starttime="20210115 14:06:44.427" endtime="20210115 14:06:47.096"></status>
+</kw>
+<kw name="write in a cell" library="Excel">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210115 14:06:50.107" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210115 14:06:47.098" endtime="20210115 14:06:50.107"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:"A" 3</arg>
+</arguments>
+<status status="PASS" starttime="20210115 14:06:50.107" endtime="20210115 14:06:50.573"></status>
+</kw>
+<kw name="Press Keys" library="WhiteLibrary">
+<doc>Press a key or keys.</doc>
+<arguments>
+<arg>Hola mundo</arg>
+</arguments>
+<status status="PASS" starttime="20210115 14:06:50.574" endtime="20210115 14:06:50.607"></status>
+</kw>
+<status status="PASS" starttime="20210115 14:06:47.097" endtime="20210115 14:06:50.608"></status>
+</kw>
+<kw name="save the file" library="Excel" type="teardown">
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210115 14:06:53.614" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210115 14:06:50.610" endtime="20210115 14:06:53.614"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:Cerrar</arg>
+</arguments>
+<status status="PASS" starttime="20210115 14:06:53.614" endtime="20210115 14:06:54.144"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210115 14:06:57.152" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210115 14:06:54.144" endtime="20210115 14:06:57.152"></status>
+</kw>
+<kw name="Press Keys" library="WhiteLibrary">
+<doc>Press a key or keys.</doc>
+<arguments>
+<arg>TEST_EXCEL</arg>
+</arguments>
+<status status="PASS" starttime="20210115 14:06:57.152" endtime="20210115 14:06:57.301"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3s</arg>
+</arguments>
+<msg timestamp="20210115 14:07:00.310" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20210115 14:06:57.302" endtime="20210115 14:07:00.310"></status>
+</kw>
+<kw name="Click Item" library="WhiteLibrary">
+<doc>Clicks an item.</doc>
+<arguments>
+<arg>text:Guardar</arg>
+</arguments>
+<status status="PASS" starttime="20210115 14:07:00.311" endtime="20210115 14:07:00.698"></status>
+</kw>
+<status status="PASS" starttime="20210115 14:06:50.609" endtime="20210115 14:07:00.699"></status>
+</kw>
+<tags>
+<tag>Smoke</tag>
+</tags>
+<status status="PASS" starttime="20210115 14:06:44.426" endtime="20210115 14:07:00.700" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20210115 14:06:43.974" endtime="20210115 14:07:00.702"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0">Smoke</stat>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="Test">Test</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
